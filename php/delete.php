@@ -6,7 +6,7 @@
 
 	$db = new DB();
 
-	$sql = "DELETE FROM `blogs` WHERE `id` = $data->id";
+	$sql = "DELETE FROM tbl_todo WHERE 'id' = $data->id";
 
 	$data = $db->qryFire($sql);
 

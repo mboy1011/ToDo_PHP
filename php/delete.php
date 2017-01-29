@@ -8,6 +8,6 @@
 
 	$sql = "DELETE FROM tbl_todo WHERE 'id' = $data->id";
 
-	$data = $db->qryFire($sql);
+	$data = $db->pop($sql);
 
 	echo json_encode($data);
